@@ -119,7 +119,7 @@ cdn:
 # ---------------
 avatar: 
 
-top_img: true # false or url of img 
+top_img: https://static.ifthat.com/public/data/code-2620118_1920.jpg # false or url of img 
 
 post_meta:
   date_type: created # created or updated 
@@ -137,7 +137,7 @@ toc:
 heart:
   enable: true
   href: https://github.com/allenliu123
-  text: 感谢访问本站ss
+  text: 感谢访问
 
 post_copyright:
   enable: true
