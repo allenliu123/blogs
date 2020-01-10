@@ -118,7 +118,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: 
+avatar: https://static.ifthat.com/public/data/allen.jpg
 
 top_img: https://static.ifthat.com/public/data/code-2620118_1920.jpg # false or url of img 
 
