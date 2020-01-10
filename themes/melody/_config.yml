@@ -228,8 +228,9 @@ since: 2018
 # footer_custom_text:
 
 ICP:
-  enable: false
-  #text: 
+  enable: true
+  url: 'http://www.beian.miit.gov.cn'
+  text: '渝ICP备18003946号-2'
 
 # busuanzi count for PV / UV in site
 busuanzi:
