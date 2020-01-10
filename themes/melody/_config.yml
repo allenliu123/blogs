@@ -134,6 +134,11 @@ toc:
   enable: true
   # number: true
 
+heart:
+  enable: true
+  href: https://github.com/allenliu123
+  text: 感谢访问本站ss
+
 post_copyright:
   enable: true
   license: CC BY-NC-SA 4.0
