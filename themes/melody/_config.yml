@@ -47,8 +47,9 @@ highlight_theme: default
 
 # Nav settings
 # ---------------
-#social:
-  #icon_name: url
+social:
+  github: https://github.com/allenliu123
+  # rss: /atom.xml
 
 # Algolia search
 # ---------------
@@ -257,9 +258,10 @@ busuanzi:
 
 # Sidebar Settings
 # ---------------
-#links_title: Links
-#links:
-  #Name: url
+links_title: 大佬博客   # Set the links title
+links:
+  Nova: https://nova.moe
+  Johnniang: https://johnniang.me
 
 # Follow Me Button
 # follow:
