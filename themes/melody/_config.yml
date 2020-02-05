@@ -48,7 +48,9 @@ highlight_theme: default
 # Nav settings
 # ---------------
 social:
+  telegram: https://t.me/allenliu123
   github: https://github.com/allenliu123
+  twitter: https://twitter.com/AllenAllenliu
   # rss: /atom.xml
 
 # Algolia search
