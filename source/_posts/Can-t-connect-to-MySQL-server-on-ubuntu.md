@@ -1,7 +1,9 @@
 ---
 title: ubuntu mariadb 无法连接远程连接的解决思路
 date: 2018-11-20 10:48:23
-tags: [linux, mariadb]
+tags:
+- linux
+- mariadb
 ---
 今天在阿里云服务器上安装mysql，原本以为会很顺利，结果总是无法远程连接
 搞了很久才解决，浪费了这么多时间，写篇博客记(ma)录(niang)一下，避免下次在入坑

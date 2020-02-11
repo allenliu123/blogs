@@ -1,7 +1,9 @@
 ---
 title: Linux上 MongoDB 实现远程连接并设置账号密码
 date: 2018-07-31 20:26:31
-tags: [mongodb, linux]
+tags:
+- mongodb
+- linux
 ---
 
 本地系统：Fedora 28

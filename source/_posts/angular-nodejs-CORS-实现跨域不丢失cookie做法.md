@@ -1,7 +1,9 @@
 ---
 title: angular + nodejs + CORS 实现跨域不丢失cookie做法
 date: 2019-03-27 18:27:40
-tags: [nodejs, angular]
+tags:
+- nodejs
+- angular
 ---
 
 想要做一个angular + nodejs 的登录

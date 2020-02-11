@@ -1,7 +1,10 @@
 ---
 title: enron 数据可视化 + itunes 歌手单曲统计
 date: 2018-11-17 10:38:57
-tags: [nodejs, charjs, mysql]
+tags:
+- nodejs
+- charjs
+- mysql
 ---
 ## enron 数据可视化
 ### 思路

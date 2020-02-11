@@ -1,7 +1,7 @@
 ---
 title: 使用Aircrack-ng破解WPA2加密的wifi密码
 date: 2020-02-11 18:59:04
-tags: [linux]
+tags: linux
 ---
 
 ## 写在前面

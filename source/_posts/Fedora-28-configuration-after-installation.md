@@ -1,7 +1,10 @@
 ---
 title: fedora 28 安装后的配置
 date: 2018-07-28 08:15:50
-tags: [chrome, sublime, linux]
+tags:
+- chrome
+- sublime
+- linux
 ---
 
 现在重装过我的linux系统大概3次，每次装完系统都要配置好半天，不像windows一样，装完之后就可以用了，还会出现不少的问题，现在作一个记录，为了下次的重装系统不再麻烦

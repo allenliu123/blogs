@@ -1,7 +1,7 @@
 ---
 title: 用echarts展示sakila中顾客的地理位置信息
 date: 2019-04-16 20:16:40
-tags: [javascrip]
+tags: javascrip
 ---
 ## 写在前面
 使用echarts最重要的就是把options配置正确，

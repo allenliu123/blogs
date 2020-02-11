@@ -1,7 +1,9 @@
 ---
 title: 用JOCL做GPU编程
 date: 2018-07-23 19:46:46
-tags: [gpu, java]
+tags:
+- gpu
+- java
 ---
 
 ## JOCL 介绍
