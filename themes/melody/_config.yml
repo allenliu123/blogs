@@ -190,9 +190,9 @@ addThis:
 # Comments System
 # ---------------
 disqus:
-  enable: false 
-  #shortname: 
-  #count: 
+  enable: true 
+  shortname: allenliu123
+  count: true
 
 # laibili:
   # enable: false
