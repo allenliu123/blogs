@@ -33,8 +33,8 @@ https://signup.heroku.com/login
 `heroku apps`可以查看你的 app，也可以在网页端查看(https://dashboard.heroku.com/apps)
 
 ### 添加 config vars
-hero app 都是需要发布到 git 仓库的，但是我不想也不能把我的 bot token 写到代码里面
-hero 提供了一个好的解决方案，就是 config vars ，他可以把一些变量写到 config vars 里面，见[官网介绍](https://devcenter.heroku.com/articles/config-vars)
+heroku app 都是需要发布到 git 仓库的，但是我不想也不能把我的 bot token 写到代码里面
+heroku 提供了一个好的解决方案，就是 config vars ，他可以把一些变量写到 config vars 里面，见[官网介绍](https://devcenter.heroku.com/articles/config-vars)
 `heroku config:set token={telegram_bot_token} -a ifthat-bot-heroku`
 程序里面可以使用 `const token = process.env.token` 取得 token 的值
 
