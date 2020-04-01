@@ -11,12 +11,12 @@ date: 2020-04-02 01:01:33
 我的 Telegram Bot [@ifthat_bot](https://t.me/ifthat_bot)，Telegram 在墙外，所以 bot 程序也必须运行在墙外，以前都是在我国内服务器上安装 v2ray，使用 `proxychains node app.js` 来运行，但是我买的翻墙服务不稳定，想到了 heroku 不是可以免费运行我的服务吗（还不是因为没钱），而且还是国外的服务器，打算使用 heroku 来~~白嫖~~运行试试。
 下面记录一下过程和遇到的问题
 
-## 注册 Heroku 账户
+### 注册 Heroku 账户
 
 https://signup.heroku.com/login
 
-##  heroku 命令行工具
-这个命令行工具非常强大，直接使用命令行的方式替代所有在网页上的操作，例如：新建 app (hero create:{appName})
+### heroku 命令行工具
+这个命令行工具非常强大，直接使用命令行的方式替代所有在网页上的操作，例如：新建 app (heroku create:{appName})
 
 ### 安装
 [官网](https://devcenter.heroku.com/articles/heroku-cli)有各种安装方式，作为 nodejs 开发者，当然更喜欢 npm
@@ -49,7 +49,7 @@ create 命令会自动创建一个 git， 地址是 git@heroku.com:ifthat-bot-he
 ### 查看 log
 `heroku logs --tail -a ifthat-bot-heroku`
 
-## 问题
+### 问题
 1. 运行错误
 heroku app 传上去后会运行 npm run start 
 所以需要在 package.json 文件的 scripts 里面写条 `"start": "node app.js"`
