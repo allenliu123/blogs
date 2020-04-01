@@ -50,7 +50,12 @@ create 命令会自动创建一个 git， 地址是 git@heroku.com:ifthat-bot-he
 `heroku logs --tail -a ifthat-bot-heroku`
 
 ## 问题
-经常会断掉，找了半天原来是因为这个服务运行完就会停止
+1. 运行错误
+heroku app 传上去后会运行 npm run start 
+所以需要在 package.json 文件的 scripts 里面写条 `"start": "node app.js"`
+
+2. 经常会断掉
+找了半天原来是因为这个服务运行完就会停止
 解决办法：跑一个 web 服务，让它一直监听
 ``` javascript
 var http = require('http');
