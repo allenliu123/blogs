@@ -28,6 +28,9 @@ https://signup.heroku.com/login
 终端会调起浏览器登录页面，如果浏览器已经登录了 heroku， 直接就会登录成功
 > 登录成功后就可以愉快的玩耍了
 
+### 上传 ssh 公钥
+`heroku keys:add`
+
 ### 创建 app
 我先 cd 到我的项目路径下，`create apps:ifthat-bot-heroku`, ifthat-bot-heroku 就是 heroku app 名字，不写的画面，会生成随机的名字
 `heroku apps`可以查看你的 app，也可以在网页端查看(https://dashboard.heroku.com/apps)
@@ -39,7 +42,7 @@ heroku 提供了一个好的解决方案，就是 config vars ，他可以把一
 程序里面可以使用 `const token = process.env.token` 取得 token 的值
 
 ### 添加 heroku 的 git
-create 命令会自动创建一个 git， 地址是 git@heroku.com:ifthat-bot-heroku.git
+create 命令会自动创建一个 git， 地址是 https://git.heroku.com/ifthat-bot-heroku.git 或者 git@heroku.com:ifthat-bot-heroku.git
 `git init`
 `git remote add heroku git@heroku.com:ifthat-bot-heroku.git`
 `git add . && git commit -m 'add heroku'`
@@ -55,12 +58,22 @@ heroku app 传上去后会运行 npm run start
 所以需要在 package.json 文件的 scripts 里面写条 `"start": "node app.js"`
 
 2. 经常会断掉
-找了半天原来是因为这个服务运行完就会停止
-解决办法：跑一个 web 服务，让它一直监听
+原因是 heroku 会自动杀死一些 idl 的服务
+解决办法：跑一个 web 服务，响应请求，再跑一个定时任务，每隔 30 分钟去请求一次 https://ifthat-bot-heroku.herokuapp.com/
 ``` javascript
 var http = require('http');
 
 http.createServer(function (req, res) {
-  res.end("I am running");
+  res.end("I am still running");
 }).listen(process.env.PORT || 5000);
+
+// keep alive
+setInterval(function() {
+  var options = {
+    uri: `https://ifthat-bot-heroku.herokuapp.com/`,
+  };
+  rp(options).then(data => {
+    console.log(data)
+  });
+}, 30 * 60 * 1000);
 ```
