@@ -7,7 +7,7 @@
   },
   "scripts": {
     "push": "hexo clean && hexo generate && hexo deploy",
-    "release": "hexo clean && hexo generate && cp -r public/* /usr/share/nginx/hexo/" 
+    "release": "hexo clean && hexo generate && cp -r public/* /usr/share/nginx/blog/index" 
   },
   "dependencies": {
     "hexo": "^3.2.0",
