@@ -111,7 +111,7 @@ export default defineComponent({
 
 具体代码如下
 ``` javascript
-
+// eventBus.js
 let eventBus = function() {
   let eventList = {}
 
@@ -163,7 +163,8 @@ let eventBus = function() {
 
 
 module.exports = eventBus
-
+```
+``` javascript
 // test.js
 
 const eventBus = require('./eventBus')
