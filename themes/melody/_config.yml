@@ -105,6 +105,8 @@ scripts:
 - /js/scroll.js
 - /js/head.js
 - /js/click.js
+- /js/script.js
+- /js/webfunny.js
 
 # cdn for third-party library
 # ---------------
