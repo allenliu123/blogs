@@ -181,6 +181,8 @@ console.log(proxy.a) // set value, 2
 </html>
 ```
 
+效果:
+![](https://static.ifthat.com/public/data/3e3973a63b317880-GIF-2022-3-20-15-05-01.gif)
 
 参考资料
 
