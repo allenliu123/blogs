@@ -18,14 +18,14 @@ export default new Vue();
 ``` html
 // A.vue
 <script>
-	import channel from "./channel.js"
-	export default {
-		mounted() {
-			channel.$on("btnClick", () => {
-				console.log('xxx')
-			});
-		}
-	}
+  import channel from "./channel.js"
+  export default {
+    mounted() {
+      channel.$on("btnClick", () => {
+        console.log('xxx')
+      });
+    }
+  }
 </script>
 ```
 
@@ -33,19 +33,19 @@ export default new Vue();
 // B.vue
 <template>
   <div>
-  	<button @click="handleBtnClick" value="click"/>
+    <button @click="handleBtnClick" value="click"/>
   </div>
 </template>
 
 <script>
-	import channel from "./channel.js"
-	export default {
-		methods: {
-			handleBtnClick: function() {
+  import channel from "./channel.js"
+  export default {
+    methods: {
+      handleBtnClick: function() {
       channel.$emit('btnClick') 
-			}
-		}
-	}
+      }
+    }
+  }
 <script>
 ```
 
@@ -83,7 +83,7 @@ export default defineComponent({
 // B.vue
 <template lang="typescript">
   <div>
-  	<button @click="handleBtnClick" value="click"/>
+    <button @click="handleBtnClick" value="click"/>
   </div>
 </template>
 

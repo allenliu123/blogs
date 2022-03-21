@@ -47,12 +47,12 @@ Object.getOwnPropertyDescriptor(obj, 'a');
 ```js
 var obj1 = { a: 1 };
 Object.defineProperty(obj1, 'a', {
-	value: 2
+  value: 2
 });
 console.log(obj1) // {a: 2}
 
 Object.defineProperty(obj1, 'a', {
-	get() { return 3}
+  get() { return 3}
 });
 console.log(obj1) // { a: 3, get a: f get() }
 ```
